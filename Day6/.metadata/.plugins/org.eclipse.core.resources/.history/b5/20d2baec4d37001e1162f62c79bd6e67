@@ -1,0 +1,16 @@
+package java8streamapi;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class TestIntermediateOperation {
+
+	public static void main(String[] args) {
+		
+		List numbers=Arrays.asList(2,6,7,5,10);
+		
+		System.out.println(numbers.stream()
+				.map(num->num*2)
+				.forEach(System.out::println));
+	}
+}

@@ -1,0 +1,62 @@
+package listex;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class TestListInterface {
+
+	public static void main(String[] args) {
+
+		List<Employee> EmpList = new ArrayList<Employee>();
+		EmpList.add(new Employee(101, "Asma"));
+		EmpList.add(new Employee(102, "Jay"));
+		EmpList.add(new Employee(103, "Charls"));
+		EmpList.add(new Employee(104, "Nikita"));
+		EmpList.add(new Employee(105, "Hari"));
+
+		System.out.println(EmpList);
+
+		//using Java 7
+		Collections.sort(EmpList);
+
+		for (Employee emp : EmpList) {
+			System.out.println(emp.toString());
+		}
+
+		
+		//using Java 8 API -Stream API
+		
+		
+		Employee empsortedByName=EmpList.stream().sorted(Comparator.comparing(Employee::getEmpName));
+	}
+
+}
+
+class Employee implements Comparable {
+	private int empid;
+	private String empname;
+	public Employee(int empid, String empname) {
+		super();
+		this.empid = empid;
+		this.empname = empname;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empid=" + empid + ", empname=" + empname + "]";
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		Employee emp1 = (Employee) o;
+		if (empid > emp1.empid)
+			return 1;
+		else if (empid < emp1.empid)
+			return -1;
+		else
+			return 0;
+	}
+
+}

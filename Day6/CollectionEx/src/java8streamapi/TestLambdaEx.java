@@ -1,0 +1,34 @@
+package java8streamapi;
+/*
+ * Functional Interface is like an interface but contains only one abstract 
+ * method and also can have any number of default and static methods
+ */
+
+@FunctionalInterface
+interface IVehicle
+{
+	void start();
+	default void greet()
+	{
+		System.out.println("Welcome to Java 8 API");
+	}
+	
+	static void sendOff()
+	{
+		System.out.println("Thank you");
+	}
+	
+}
+public class TestLambdaEx {
+
+	public static void main(String[] args) {
+		
+		IVehicle iv=()->{System.out.println("Vehicle Started");};
+		
+		iv.greet();
+		iv.start();
+		IVehicle.sendOff();
+
+	}
+
+}

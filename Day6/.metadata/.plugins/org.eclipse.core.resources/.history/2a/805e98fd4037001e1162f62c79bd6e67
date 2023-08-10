@@ -1,0 +1,54 @@
+package listex;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+public class TestListInterface {
+
+	public static void main(String[] args) {
+
+		//List<Short> FNos= new ArrayList<Short>()
+		List<Integer> numbers=new ArrayList<Integer>();
+		
+		numbers.add(10);
+		numbers.add(20);
+		numbers.add(30);
+		numbers.add(12);
+		numbers.add(70);
+		numbers.add(80);
+		
+		System.out.println(numbers);
+		
+		Collections.sort(numbers);
+		
+		System.out.println(numbers);	
+		
+	}
+
+	
+	
+}
+
+
+class Employee
+{
+	
+	private int empid;
+	private String empname;
+	public Employee(int empid, String empname) {
+		super();
+		this.empid = empid;
+		this.empname = empname;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empid=" + empid + ", empname=" + empname + "]";
+	}
+	
+
+	
+	
+	
+}

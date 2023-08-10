@@ -1,0 +1,14 @@
+Stream API
+it is having an intermediate and terminate functions
+to implement predefined or user defined functional
+interface to perform Mapping, filtering, sorting,
+store to list, set or map.
+
+Stream is a sequence of objects that support various 
+methods which can be pipelined to produce the 
+desired result
+Stream is not datastructure instead it takes
+input from file io, Collections and Arrays.
+
+Intermediate Operations: map, filter,sorted
+Terminate Operations:collect, foreach,reduce
