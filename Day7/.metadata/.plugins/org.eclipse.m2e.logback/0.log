@@ -1,0 +1,280 @@
+2023-08-11 11:55:52,567 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-08-11 12:45:12,539 [Worker-36: Creating project "CMS"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.amdocs:CMS:0.0.1-SNAPSHOT @ D:\Amdocs\Day7\CMS\pom.xml.
+2023-08-11 12:45:13,918 [Worker-36: Creating project "CMS"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CMS/src/main/java
+2023-08-11 12:45:13,919 [Worker-36: Creating project "CMS"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CMS/src/main/resources
+2023-08-11 12:45:13,921 [Worker-36: Creating project "CMS"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CMS/src/test/java
+2023-08-11 12:45:13,921 [Worker-36: Creating project "CMS"] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CMS/src/test/resources
+2023-08-11 12:45:14,345 [Worker-40: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 12:45:14,350 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 12:45:14,353 [Worker-40: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 12:45:14,353 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 12:48:19,589 [Worker-45: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.amdocs:CMS:0.0.1-SNAPSHOT @ D:\Amdocs\Day7\CMS\pom.xml.
+2023-08-11 12:48:19,850 [Worker-45: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 12:48:19,852 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 12:48:19,856 [Worker-45: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 12:48:19,856 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 12:48:21,780 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/oracle/database/jdbc/ojdbc10/19.3.0.0/ojdbc10-19.3.0.0-sources.jar
+2023-08-11 12:48:22,087 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/oracle/database/jdbc/ojdbc10/19.3.0.0/ojdbc10-19.3.0.0-sources.jar
+2023-08-11 12:48:22,092 [Worker-45: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.oracle.database.jdbc:ojdbc10:19.3.0.0
+2023-08-11 12:48:22,972 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/oracle/database/jdbc/ucp/19.3.0.0/ucp-19.3.0.0-sources.jar
+2023-08-11 12:48:23,244 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/oracle/database/jdbc/ucp/19.3.0.0/ucp-19.3.0.0-sources.jar
+2023-08-11 12:48:23,246 [Worker-45: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.oracle.database.jdbc:ucp:19.3.0.0
+2023-08-11 12:48:23,327 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/oracle/database/security/oraclepki/19.3.0.0/oraclepki-19.3.0.0-sources.jar
+2023-08-11 12:48:23,388 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/oracle/database/security/oraclepki/19.3.0.0/oraclepki-19.3.0.0-sources.jar
+2023-08-11 12:48:23,392 [Worker-45: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.oracle.database.security:oraclepki:19.3.0.0
+2023-08-11 12:48:24,314 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/oracle/database/security/osdt_cert/19.3.0.0/osdt_cert-19.3.0.0-sources.jar
+2023-08-11 12:48:24,613 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/oracle/database/security/osdt_cert/19.3.0.0/osdt_cert-19.3.0.0-sources.jar
+2023-08-11 12:48:24,616 [Worker-45: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.oracle.database.security:osdt_cert:19.3.0.0
+2023-08-11 12:48:24,706 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/oracle/database/security/osdt_core/19.3.0.0/osdt_core-19.3.0.0-sources.jar
+2023-08-11 12:48:24,733 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/oracle/database/security/osdt_core/19.3.0.0/osdt_core-19.3.0.0-sources.jar
+2023-08-11 12:48:24,736 [Worker-45: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.oracle.database.security:osdt_core:19.3.0.0
+2023-08-11 12:48:24,799 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/oracle/database/ha/simplefan/19.3.0.0/simplefan-19.3.0.0-sources.jar
+2023-08-11 12:48:24,845 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/oracle/database/ha/simplefan/19.3.0.0/simplefan-19.3.0.0-sources.jar
+2023-08-11 12:48:24,848 [Worker-45: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.oracle.database.ha:simplefan:19.3.0.0
+2023-08-11 12:48:24,897 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/oracle/database/ha/ons/19.3.0.0/ons-19.3.0.0-sources.jar
+2023-08-11 12:48:24,933 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/oracle/database/ha/ons/19.3.0.0/ons-19.3.0.0-sources.jar
+2023-08-11 12:48:24,936 [Worker-45: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.oracle.database.ha:ons:19.3.0.0
+2023-08-11 12:49:52,400 [Worker-46: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.amdocs:CMS:0.0.1-SNAPSHOT @ D:\Amdocs\Day7\CMS\pom.xml.
+2023-08-11 12:49:53,518 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/oracle/database/jdbc/ojdbc11/21.1.0.0/ojdbc11-21.1.0.0.jar
+2023-08-11 12:49:56,244 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/oracle/database/jdbc/ojdbc11/21.1.0.0/ojdbc11-21.1.0.0.jar
+2023-08-11 12:49:56,458 [Worker-46: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 12:49:56,459 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 12:49:56,462 [Worker-46: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 12:49:56,462 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 12:49:57,563 [Worker-41: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/oracle/database/jdbc/ojdbc11/21.1.0.0/ojdbc11-21.1.0.0-sources.jar
+2023-08-11 12:49:57,620 [Worker-41: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/oracle/database/jdbc/ojdbc11/21.1.0.0/ojdbc11-21.1.0.0-sources.jar
+2023-08-11 12:49:57,622 [Worker-41: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.oracle.database.jdbc:ojdbc11:21.1.0.0
+2023-08-11 12:51:11,012 [Worker-45: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 12:51:11,015 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 12:51:11,018 [Worker-45: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 12:51:11,019 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 12:51:36,484 [Worker-44: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 12:51:36,485 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 12:51:36,486 [Worker-44: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 12:51:36,487 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 13:59:31,989 [Worker-63: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 13:59:31,997 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 13:59:32,000 [Worker-63: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 13:59:32,000 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:03:44,451 [Worker-63: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:03:44,452 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:03:44,453 [Worker-63: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:03:44,459 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:03:59,543 [Worker-61: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:03:59,544 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:03:59,546 [Worker-61: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:03:59,546 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:04:24,123 [Worker-61: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:04:24,124 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:04:24,127 [Worker-61: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:04:24,128 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:05:29,990 [Worker-64: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:05:29,991 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:05:29,993 [Worker-64: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:05:29,994 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:06:06,674 [Worker-58: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:06:06,674 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:06:06,676 [Worker-58: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:06:06,677 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:13:02,912 [Worker-63: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:13:02,914 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:13:02,916 [Worker-63: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:13:02,916 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:15:02,630 [Worker-62: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:15:02,631 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:15:02,633 [Worker-62: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:15:02,633 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:16:53,508 [Worker-61: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:16:53,510 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:16:53,513 [Worker-61: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:16:53,513 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:29:52,469 [Worker-70: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:29:52,470 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:29:52,472 [Worker-70: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:29:52,473 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:31:21,863 [Worker-68: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:31:21,864 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:31:21,867 [Worker-68: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:31:21,867 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:33:35,842 [Worker-69: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:33:35,842 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:33:35,844 [Worker-69: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:33:35,844 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:33:49,370 [Worker-69: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:33:49,370 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:33:49,372 [Worker-69: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:33:49,372 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:34:29,816 [Worker-68: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:34:29,817 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:34:29,818 [Worker-68: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:34:29,819 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:38:15,670 [Worker-73: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:38:15,671 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:38:15,673 [Worker-73: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:38:15,673 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:38:22,422 [Worker-73: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:38:22,423 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:38:22,425 [Worker-73: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:38:22,425 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:39:27,148 [Worker-66: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:39:27,149 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:39:27,151 [Worker-66: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:39:27,157 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:39:34,275 [Worker-74: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:39:34,275 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:39:34,277 [Worker-74: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:39:34,278 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:40:08,558 [Worker-66: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:40:08,559 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:40:08,561 [Worker-66: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:40:08,569 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:42:30,189 [Worker-74: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:42:30,190 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:42:30,191 [Worker-74: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:42:30,192 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:46:22,436 [Worker-76: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:46:22,437 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:46:22,438 [Worker-76: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:46:22,439 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:46:32,897 [Worker-76: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:46:32,898 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:46:32,900 [Worker-76: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:46:32,901 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:47:46,721 [Worker-74: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:47:46,722 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:47:46,723 [Worker-74: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:47:46,724 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:48:02,446 [Worker-77: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:48:02,446 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:48:02,448 [Worker-77: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:48:02,449 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:48:34,329 [Worker-74: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:48:34,330 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:48:34,331 [Worker-74: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:48:34,332 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:50:00,141 [Worker-78: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:50:00,142 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:50:00,143 [Worker-78: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:50:00,144 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:51:03,678 [Worker-78: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:51:03,679 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:51:03,681 [Worker-78: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:51:03,681 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:51:26,786 [Worker-78: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:51:26,787 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:51:26,788 [Worker-78: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:51:26,788 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:51:41,574 [Worker-79: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:51:41,576 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:51:41,577 [Worker-79: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:51:41,578 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:51:48,657 [Worker-73: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:51:48,658 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:51:48,659 [Worker-73: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:51:48,660 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:53:45,666 [Worker-78: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:53:45,667 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:53:45,668 [Worker-78: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:53:45,675 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:54:23,903 [Worker-74: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:54:23,904 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 14:54:23,906 [Worker-74: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 14:54:23,906 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:00:00,112 [Worker-73: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:00:00,113 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:00:00,114 [Worker-73: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:00:00,123 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:00:11,746 [Worker-82: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:00:11,747 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:00:11,748 [Worker-82: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:00:11,749 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:02:03,898 [Worker-73: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:02:03,899 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:02:03,901 [Worker-73: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:02:03,901 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:02:26,761 [Worker-73: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:02:26,762 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:02:26,763 [Worker-73: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:02:26,764 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:02:45,546 [Worker-80: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:02:45,547 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:02:45,548 [Worker-80: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:02:45,549 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:04:47,847 [Worker-82: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:04:47,848 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:04:47,850 [Worker-82: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:04:47,852 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:05:30,653 [Worker-80: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:05:30,654 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:05:30,656 [Worker-80: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:05:30,656 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:06:40,846 [Worker-74: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:06:40,847 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:06:40,848 [Worker-74: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:06:40,854 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:12:40,552 [Worker-83: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:12:40,552 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:12:40,554 [Worker-83: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-08-11 15:12:40,555 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-08-11 15:12:52,822 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2023-08-11 15:13:02,019 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558 [615])
+2023-08-11 15:13:02,037 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558
+2023-08-11 15:13:02,037 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\aether-connector-okhttp-0.17.8.jar
+2023-08-11 15:13:02,037 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\aopalliance-1.0.jar
+2023-08-11 15:13:02,038 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\commons-lang3-3.8.1.jar
+2023-08-11 15:13:02,038 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\failureaccess-1.0.1.jar
+2023-08-11 15:13:02,038 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\guava-30.1-jre.jar
+2023-08-11 15:13:02,038 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\guice-5.1.0.jar
+2023-08-11 15:13:02,038 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\jansi-2.4.0.jar
+2023-08-11 15:13:02,039 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-artifact-3.9.1.jar
+2023-08-11 15:13:02,039 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-builder-support-3.9.1.jar
+2023-08-11 15:13:02,039 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-compat-3.9.1.jar
+2023-08-11 15:13:02,040 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-core-3.9.1.jar
+2023-08-11 15:13:02,040 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-embedder-3.9.1.jar
+2023-08-11 15:13:02,041 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-model-3.9.1.jar
+2023-08-11 15:13:02,041 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-model-builder-3.9.1.jar
+2023-08-11 15:13:02,041 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-plugin-api-3.9.1.jar
+2023-08-11 15:13:02,042 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-repository-metadata-3.9.1.jar
+2023-08-11 15:13:02,042 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-resolver-api-1.9.7.jar
+2023-08-11 15:13:02,042 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-resolver-connector-basic-1.9.7.jar
+2023-08-11 15:13:02,043 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-resolver-impl-1.9.7.jar
+2023-08-11 15:13:02,043 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-resolver-named-locks-1.9.7.jar
+2023-08-11 15:13:02,043 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-resolver-provider-3.9.1.jar
+2023-08-11 15:13:02,044 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-resolver-spi-1.9.7.jar
+2023-08-11 15:13:02,044 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-resolver-transport-wagon-1.9.7.jar
+2023-08-11 15:13:02,044 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-resolver-util-1.9.7.jar
+2023-08-11 15:13:02,044 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-settings-3.9.1.jar
+2023-08-11 15:13:02,044 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-settings-builder-3.9.1.jar
+2023-08-11 15:13:02,045 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\maven-shared-utils-3.3.4.jar
+2023-08-11 15:13:02,045 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\okhttp-3.14.1.jar
+2023-08-11 15:13:02,045 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\okio-1.17.3.jar
+2023-08-11 15:13:02,045 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\org.eclipse.sisu.inject-0.3.5.jar
+2023-08-11 15:13:02,046 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\org.eclipse.sisu.plexus-0.3.5.jar
+2023-08-11 15:13:02,046 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\plexus-build-api-0.0.7.jar
+2023-08-11 15:13:02,046 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\plexus-cipher-2.0.jar
+2023-08-11 15:13:02,046 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\plexus-classworlds-2.6.0.jar
+2023-08-11 15:13:02,047 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\plexus-component-annotations-2.1.0.jar
+2023-08-11 15:13:02,047 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\plexus-interpolation-1.26.jar
+2023-08-11 15:13:02,047 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\plexus-sec-dispatcher-2.0.jar
+2023-08-11 15:13:02,047 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\plexus-utils-3.5.1.jar
+2023-08-11 15:13:02,047 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\wagon-file-3.5.3.jar
+2023-08-11 15:13:02,048 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\wagon-provider-api-3.5.3.jar
+2023-08-11 15:13:02,049 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_31.1.0.jre [13])
+2023-08-11 15:13:02,051 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\com.google.guava_31.1.0.jre.jar
+2023-08-11 15:13:02,051 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_1.7.36 [982])
+2023-08-11 15:13:02,052 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\slf4j.api_1.7.36.jar
+2023-08-11 15:13:02,052 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20220405-0441 [37])
+2023-08-11 15:13:02,055 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\javax.inject_1.0.0.v20220405-0441.jar
+2023-08-11 15:13:02,055 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20230504-0748 [35])
+2023-08-11 15:13:02,056 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\javax.annotation_1.3.5.v20230504-0748.jar
+2023-08-11 15:13:02,056 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.5.0 [69])
+2023-08-11 15:13:02,060 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\org.apache.commons.cli_1.5.0.jar
+2023-08-11 15:13:02,060 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.1 [14])
+2023-08-11 15:13:02,062 [Worker-82: Launching CMS] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\HP\.p2\pool\plugins\com.google.guava.failureaccess_1.0.1.jar
+2023-08-11 15:13:02,063 [Worker-82: Launching CMS] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "D:\Amdocs\Day7\CMS":
+2023-08-11 15:13:02,064 [Worker-82: Launching CMS] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always mvn clean package
+2023-08-11 15:13:22,253 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2023-08-11 15:13:22,318 [Worker-81: Launching CMS] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "D:\Amdocs\Day7\CMS":
+2023-08-11 15:13:22,318 [Worker-81: Launching CMS] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always mvn clean package
+2023-08-11 15:13:41,531 [Worker-84: Launching CMS] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "D:\Amdocs\Day7\CMS":
+2023-08-11 15:13:41,531 [Worker-84: Launching CMS] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always mvn clean package

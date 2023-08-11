@@ -1,0 +1,35 @@
+package jdbcconnection;
+
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Connection;
+public class TestConnection {
+	
+	private static String jdbcurl="oracle.jdbc.driver.OracleDriver";
+	private static String connstring="jdbc:oracle:thin:@localhost:1521:XE";
+	private static String username="amdocsuser1";
+	private static String password="pass";
+
+	public static void main(String[] args) {
+
+		try {
+			Class.forName(jdbcurl);
+			Connection con= DriverManager.getConnection(connstring, username, password);
+			System.out.println("Connection Successful");
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}
+
+//Jdbc url
+//Database connection
+//username
+//password

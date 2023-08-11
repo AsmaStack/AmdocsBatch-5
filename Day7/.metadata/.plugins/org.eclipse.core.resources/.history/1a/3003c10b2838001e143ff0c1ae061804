@@ -1,0 +1,112 @@
+package org.amdocs.testdb;
+
+
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
+import java.util.Scanner;
+import java.sql.Connection;
+
+public class TestConnection {
+	
+	private static String jdbcurl="oracle.jdbc.driver.OracleDriver";
+	private static String connstring="jdbc:oracle:thin:@localhost:1521:XE";
+	private static String username="amdocsuser1";
+	private static String password="pass";
+	static Statement stmt;
+	public static void main(String[] args) {
+
+		try {
+			Class.forName(jdbcurl);
+			Connection con= DriverManager.getConnection(connstring, username, password);
+			System.out.println("Connection Successful");
+		//create table	
+		/*String createstmt="create table Customer(custid int, custname varchar(20))";
+			stmt=con.createStatement();
+			stmt.executeQuery(createstmt);
+			System.out.println("table created");*/
+		
+		/*
+		 * Scanner scan= new Scanner(System.in);
+		 * System.out.println("Enter Customer id "); int cid= scan.nextInt();
+		 * System.out.println("Enter Customer name "); String custname=scan.next();
+		 */	
+		/*//insert record
+		String insertstmt="insert into Customer(custname,custid) values(?,?)";
+		PreparedStatement pstinsert=con.prepareStatement(insertstmt);
+		
+		pstinsert.setInt(2,cid);
+		pstinsert.setString(1, custname);
+		
+		pstinsert.execute();
+		System.out.println("Data inserted: ");
+		*/
+			
+		//update record
+	
+		String selectstmt="Select custid from customer";
+		
+		Statement stmt= con.createStatement();
+		ResultSet rs=stmt.executeQuery(selectstmt);
+		System.out.println(rs.getInt(1));
+		
+			
+			
+			
+		/*	Scanner scan= new Scanner(System.in);
+			
+			System.out.println("Enter Customer id  to update name  & age");
+			int cid= scan.nextInt();
+			System.out.println("Enter Customer name");
+			String custname=scan.next();
+			System.out.println("Enter age");
+			int age=scan.nextInt();
+		String updatestmt="update customer set custname=?,age=? where custid=?";
+		PreparedStatement psupdate= con.prepareStatement(updatestmt);
+		
+		psupdate.setString(1, custname);
+		psupdate.setInt(2, age);
+		psupdate.setInt(3, cid);
+		
+		psupdate.execute();
+		System.out.println("Record Updated");
+		
+	*/
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}
+
+//Jdbc url
+//Database connection
+//username
+//password
