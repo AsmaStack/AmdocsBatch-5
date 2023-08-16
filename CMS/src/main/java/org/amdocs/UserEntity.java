@@ -31,101 +31,54 @@ public class UserEntity {
 					System.out.println("Customer Management System");
 					Scanner scan=new Scanner(System.in);
 					
-					System.out.println("Login or Register");
-	                System.out.println("1. Register New User");
-	                System.out.println("2. Login Existing User");
-	                System.out.println("3. Delete User");
-	                													
-	                int operat = scan.nextInt();
-
-	                switch (operat) {
-	                    case 1:
-	                        registerNewUser(con, scan);
-	                        break;
-	                        
-	                    case 2:
-	                    	loginExisting(con, scan);
-	                        break;
-	                        
-	                    case 3:
-	                    	System.out.println("Enter Customer id: ");
-	                        int deleteUserId = scan.nextInt();
-	                        deleteUser(con, deleteUserId);
-	                        break;
-	                        
-	                    default:
-	                        System.out.println("Invalid operation.");
-	                        break;
-	                }
-	                
-					System.out.println("Choose an operation:");
-	                System.out.println("1. Search customer");
-	                System.out.println("2. Add customer");
-	                System.out.println("3. Update customer");
-	                System.out.println("4. Delete customer");
-	                
-	                int operation1 = scan.nextInt();
-	                switch (operation1) {
-	                    case 1:
-	                         //Search customer
-	                        System.out.println("Enter Customer id: ");
-	                        int searchCustomerId = scan.nextInt();
-	                        searchCustomer(con, searchCustomerId);
-	                        break;
-	                    case 2:
-	                        // Add customer
-	                    	addCustomer(con, scan);
-	                        break;
-	                    case 3:
-	                        // Update customer
-	                        System.out.println("Enter Customer id: ");
-	                        int updateCustomerId = scan.nextInt();
-	                        updateCustomer(con, scan, updateCustomerId);
-	                        break;
-	                        
-	                    case 4:
-	                        // Delete customer
-	                        System.out.println("Enter Customer id: ");
-	                        int deleteCustomerId = scan.nextInt();
-	                        deleteCustomer(con, deleteCustomerId);
-	                        break;
-	                        
-	                    default:
-	                        System.out.println("Invalid operation.");
-	                        break;
-	                        
-	                	}
-	                
 	                boolean exit = false;
-	                
+	                int flag = 0;		
+
 	                while (!exit) {
-	                        System.out.println("Login or Register");
-	                        System.out.println("1. Register New User");
-	                        System.out.println("2. Login Existing User");
-	                        System.out.println("3. Exit");
-	                        
-	                        int operation2 = scan.nextInt();
-	                        
-	                        switch (operation2) {
-	                            case 1:
-	                                registerNewUser(con, scan);
-	                                break;
-	                            
-	                            case 2:
-	                                loginExisting(con, scan);
-	                                break;
-	                            
-	                            case 3:
-	                                exit = true;
-	                                System.out.println("Exiting...");
-	                                break;
-	                            
-	                            default:
-	                                System.out.println("Invalid operation.");
-	                                break;
-	                        }
-	                    }
-					
+					if (flag==0){
+						System.out.println("Login or Register");
+		                System.out.println("1. Register New User");
+		                System.out.println("2. Login Existing User");
+		                System.out.println("3. Delete User");
+	                    System.out.println("4. Exit");
+	
+		                int operat = scan.nextInt();
+	
+		                switch (operat) {
+		                    case 1:
+		                        registerNewUser(con, scan);
+		                        break;
+		                        
+		                    case 2:
+		                    	flag = loginExisting(con, scan);
+		                    	if (flag==1) {
+			                    	System.out.println("Admin false");
+		                    	}
+		                    	else if (flag==2) {
+		                    	System.out.println("Admin true");
+		                    	}
+		                        break;
+		                        
+		                    case 3:
+		                    	System.out.println("Enter Customer id: ");
+		                        int deleteUserId = scan.nextInt();
+		                        deleteUser(con, deleteUserId);
+		                        break;
+		                        
+		                    case 4:
+	                            exit = true;
+	                            System.out.println("Exiting...");
+	                            break;
+		                        
+		                    default:
+		                        System.out.println("Invalid operation.");
+		                        break;
+		                }
+					}
+	                else {
+	                	exit = repeatingSteps(con, scan, flag);
+	                }
+	                }
 				} catch (SQLException e) {
 					e.printStackTrace();
 				}
@@ -134,6 +87,104 @@ public class UserEntity {
 				e.printStackTrace();
 			}
 		}
+		
+		private static boolean repeatingSteps(Connection con, Scanner scan, int flag) throws SQLException {
+			boolean exit = false;
+			if (flag==2){
+				System.out.println("Choose an operation:");
+                System.out.println("1. View all customer");
+                System.out.println("2. Search customer");
+                System.out.println("3. Add customer");
+                System.out.println("4. Update customer");
+                System.out.println("5. Delete customer");
+                System.out.println("6. Exit");
+
+                
+                int operation1 = scan.nextInt();
+                switch (operation1) {
+                	case 1:
+                		String searchStmt = "select * from customer_table";
+            	        try (PreparedStatement psSearch = con.prepareStatement(searchStmt)) {
+            	            ResultSet rs = psSearch.executeQuery();
+            	            while (rs.next()) {
+	                	    	System.out.println("Customer ID: " + rs.getInt("customer_id") + " Name: " + rs.getString("customer_name") + " Email: " + rs.getString("customer_email") + " Contact: " + rs.getInt("customer_contact") + " Age: " + rs.getString("customer_age"));
+	                	    }}
+	            	        break;
+            	        
+                    case 2:
+                         //Search customer
+                        System.out.println("Enter Customer id: ");
+                        int searchCustomerId = scan.nextInt();
+                        searchCustomer(con, searchCustomerId);
+                        break;
+                    case 3:
+                        // Add customer
+                    	addCustomer(con, scan);
+                        break;
+                    case 4:
+                        // Update customer
+                        System.out.println("Enter Customer id: ");
+                        int updateCustomerId = scan.nextInt();
+                        updateCustomer(con, scan, updateCustomerId);
+                        break;
+                        
+                    case 5:
+                        // Delete customer
+                        System.out.println("Enter Customer id: ");
+                        int deleteCustomerId = scan.nextInt();
+                        deleteCustomer(con, deleteCustomerId);
+                        break;
+                        
+                    case 6:
+                        exit = true;
+                        System.out.println("Exiting...");
+                        break;
+                        
+                    default:
+                        System.out.println("Invalid operation.");
+                        break;
+                        
+                	}
+                }
+			else if(flag==1) {
+                	System.out.println("Choose an operation:");
+                    System.out.println("1. View all customer");
+	                System.out.println("1. Search customer");
+	                System.out.println("2. Add customer");
+	                System.out.println("3. Exit");
+
+	                
+	                int operation1 = scan.nextInt();
+	                switch (operation1) {
+		                case 1:
+	                		String searchStmt = "select * from customer_table";
+	            	        try (PreparedStatement psSearch = con.prepareStatement(searchStmt)) {
+	            	            ResultSet rs = psSearch.executeQuery();
+	                	    while (rs.next()) {
+	                	    	System.out.println("Customer ID: " + rs.getInt("customer_id") + " Name: " + rs.getString("customer_name") + " Email: " + rs.getString("customer_email") + " Contact: " + rs.getInt("customer_contact") + " Age: " + rs.getString("customer_age"));
+	                	    }}
+	            	        break;
+	                    case 2:
+	                         //Search customer
+	                        System.out.println("Enter Customer id: ");
+	                        int searchCustomerId = scan.nextInt();
+	                        searchCustomer(con, searchCustomerId);
+	                        break;
+	                    case 3:
+	                        // Add customer
+	                    	addCustomer(con, scan);
+	                        break;
+	                    case 4:
+	                        exit = true;
+	                        System.out.println("Exiting...");
+	                        break;
+	                    default:
+	                        System.out.println("Invalid operation.");
+	                        break;
+	                }
+                }
+			return exit;
+	    }
 		
 		private static void searchCustomer(Connection con, int customerId) throws SQLException {
 	        String searchStmt = "select * from customer_table where customer_id = ?";
@@ -168,10 +219,12 @@ public class UserEntity {
 	        
 	        System.out.println("Enter customer_id ");
 			int customer_id=scan.nextInt(); 
+	        
 			
-
 	        String insertstmt="insert into customer_table(customer_id, customer_name, customer_email, customer_contact, customer_age) values(?,?,?,?,?)";
 	        try (PreparedStatement psinsert = con.prepareStatement(insertstmt)) {
+	        	if (customer_age>100)
+		            throw new AgeException("Input age should be less than 100");
 				psinsert.setInt(1, customer_id);				
 				psinsert.setString(2, customer_name);
 				psinsert.setString(3, customer_email);
@@ -179,6 +232,12 @@ public class UserEntity {
 				psinsert.setInt(5, customer_age);
 				psinsert.execute();
 				System.out.println("Data inserted: ");
+	        }
+	        catch (AgeException ex) {
+	            System.out.println("Caught");
+	 
+	            // Print the message from MyException object
+	            System.out.println(ex.getMessage());
 	        }
 	    }
 		
@@ -198,19 +257,11 @@ public class UserEntity {
 	        System.out.println("Enter customer age: ");
 	        int customer_age = scan.nextInt();
 	        
-	        try {
-	            if (customer_age>100)
-	            throw new AgeException("Input age should be less than 100");
-	        }
-	        catch (AgeException ex) {
-	            System.out.println("Caught");
-	 
-	            // Print the message from MyException object
-	            System.out.println(ex.getMessage());
-	        }
 
 	        String updateStmt = "update customer_table set customer_name=?, customer_email=?, customer_contact=?, customer_age=? where customer_id=?";
 	        try (PreparedStatement psUpdate = con.prepareStatement(updateStmt)) {
+	        	if (customer_age>100)
+		            throw new AgeException("Input age should be less than 100");
 				psUpdate.setString(1, customer_name);
 				psUpdate.setString(2, customer_email);
 				psUpdate.setInt(3, customer_contact);
@@ -218,6 +269,12 @@ public class UserEntity {
 				psUpdate.setInt(5, customer_id);				
 				psUpdate.executeUpdate();
 				System.out.println("Data updated: ");
+	        }
+	        catch (AgeException ex) {
+	            System.out.println("Caught");
+	 
+	            // Print the message from MyException object
+	            System.out.println(ex.getMessage());
 	        }
 	    }
 
@@ -260,7 +317,7 @@ public class UserEntity {
 	        }
 	    }
 		
-		private static void loginExisting(Connection con, Scanner scan) throws SQLException{
+		private static int loginExisting(Connection con, Scanner scan) throws SQLException{
 			
 			System.out.println("Enter user_name ");
 			String user_name=scan.next();
@@ -275,10 +332,21 @@ public class UserEntity {
 				psLogin.setString(2, user_password);
 				ResultSet result= psLogin.executeQuery();
 		
-			if(result.next())
+			if(result.next()) {
 				System.out.println("Login Successful");
-			else
+				if (user_name.equals("lakshit")){
+					return 2;
+				}
+				else {
+					return 1;
+				}
+			}
+				
+			else {
 				System.out.println("User doesn't exist");
+				return 0;
+			}
+
 		}
 	}
 		
