@@ -31,11 +31,17 @@ public class UserEntity {
 					System.out.println("Customer Management System");
 					Scanner scan=new Scanner(System.in);
 					
+	                boolean exit = false;
+	                
+	                while (!exit) {
+					
 					System.out.println("Login or Register");
 	                System.out.println("1. Register New User");
 	                System.out.println("2. Login Existing User");
 	                System.out.println("3. Delete User");
-	                													
+                    System.out.println("4. Exit");
+
+	                Boolean flag = false;			
 	                int operat = scan.nextInt();
 
 	                switch (operat) {
@@ -44,7 +50,8 @@ public class UserEntity {
 	                        break;
 	                        
 	                    case 2:
-	                    	loginExisting(con, scan);
+	                    	flag = loginExisting(con, scan);
+	                    	System.out.println("Admin " + String.valueOf(flag));
 	                        break;
 	                        
 	                    case 3:
@@ -53,16 +60,73 @@ public class UserEntity {
 	                        deleteUser(con, deleteUserId);
 	                        break;
 	                        
+	                    case 4:
+                            exit = true;
+                            System.out.println("Exiting...");
+                            break;
+	                        
 	                    default:
 	                        System.out.println("Invalid operation.");
 	                        break;
 	                }
 	                
-					System.out.println("Choose an operation:");
+	                repeatingSteps(con, scan, flag);
+	                }
+	                        
+					
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+				
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		private static void repeatingSteps(Connection con, Scanner scan, boolean flag) throws SQLException {
+			if (flag){
+				System.out.println("Choose an operation:");
+                System.out.println("1. Search customer");
+                System.out.println("2. Add customer");
+                System.out.println("3. Update customer");
+                System.out.println("4. Delete customer");
+                
+                int operation1 = scan.nextInt();
+                switch (operation1) {
+                    case 1:
+                         //Search customer
+                        System.out.println("Enter Customer id: ");
+                        int searchCustomerId = scan.nextInt();
+                        searchCustomer(con, searchCustomerId);
+                        break;
+                    case 2:
+                        // Add customer
+                    	addCustomer(con, scan);
+                        break;
+                    case 3:
+                        // Update customer
+                        System.out.println("Enter Customer id: ");
+                        int updateCustomerId = scan.nextInt();
+                        updateCustomer(con, scan, updateCustomerId);
+                        break;
+                        
+                    case 4:
+                        // Delete customer
+                        System.out.println("Enter Customer id: ");
+                        int deleteCustomerId = scan.nextInt();
+                        deleteCustomer(con, deleteCustomerId);
+                        break;
+                        
+                    default:
+                        System.out.println("Invalid operation.");
+                        break;
+                        
+                	}
+                }
+                else {
+                	System.out.println("Choose an operation:");
 	                System.out.println("1. Search customer");
 	                System.out.println("2. Add customer");
-	                System.out.println("3. Update customer");
-	                System.out.println("4. Delete customer");
 	                
 	                int operation1 = scan.nextInt();
 	                switch (operation1) {
@@ -76,64 +140,12 @@ public class UserEntity {
 	                        // Add customer
 	                    	addCustomer(con, scan);
 	                        break;
-	                    case 3:
-	                        // Update customer
-	                        System.out.println("Enter Customer id: ");
-	                        int updateCustomerId = scan.nextInt();
-	                        updateCustomer(con, scan, updateCustomerId);
-	                        break;
-	                        
-	                    case 4:
-	                        // Delete customer
-	                        System.out.println("Enter Customer id: ");
-	                        int deleteCustomerId = scan.nextInt();
-	                        deleteCustomer(con, deleteCustomerId);
-	                        break;
-	                        
 	                    default:
 	                        System.out.println("Invalid operation.");
 	                        break;
-	                        
-	                	}
-	                
-	                boolean exit = false;
-	                
-	                while (!exit) {
-	                        System.out.println("Login or Register");
-	                        System.out.println("1. Register New User");
-	                        System.out.println("2. Login Existing User");
-	                        System.out.println("3. Exit");
-	                        
-	                        int operation2 = scan.nextInt();
-	                        
-	                        switch (operation2) {
-	                            case 1:
-	                                registerNewUser(con, scan);
-	                                break;
-	                            
-	                            case 2:
-	                                loginExisting(con, scan);
-	                                break;
-	                            
-	                            case 3:
-	                                exit = true;
-	                                System.out.println("Exiting...");
-	                                break;
-	                            
-	                            default:
-	                                System.out.println("Invalid operation.");
-	                                break;
-	                        }
-	                    }
-					
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
-				
-			} catch (ClassNotFoundException e) {
-				e.printStackTrace();
-			}
-		}
+	                }
+                }
+	    }
 		
 		private static void searchCustomer(Connection con, int customerId) throws SQLException {
 	        String searchStmt = "select * from customer_table where customer_id = ?";
@@ -260,7 +272,7 @@ public class UserEntity {
 	        }
 	    }
 		
-		private static void loginExisting(Connection con, Scanner scan) throws SQLException{
+		private static Boolean loginExisting(Connection con, Scanner scan) throws SQLException{
 			
 			System.out.println("Enter user_name ");
 			String user_name=scan.next();
@@ -275,10 +287,21 @@ public class UserEntity {
 				psLogin.setString(2, user_password);
 				ResultSet result= psLogin.executeQuery();
 		
-			if(result.next())
+			if(result.next()) {
 				System.out.println("Login Successful");
-			else
+				if (user_name.equals("lakshit")){
+					return true;
+				}
+				else {
+					return false;
+				}
+			}
+				
+			else {
 				System.out.println("User doesn't exist");
+				return false;
+			}
+
 		}
 	}
 		
